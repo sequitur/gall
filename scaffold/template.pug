@@ -1,0 +1,12 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    title !{ defines.title }
+    script(id="storyscript" type="application/json") !{ story }
+    style !{ css }
+  body
+    div#content-container
+      div#story-stage
+      div#choices
+    script !{ blotter }

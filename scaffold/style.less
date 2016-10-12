@@ -1,0 +1,87 @@
+/* Gall scaffold Less file */
+
+/* We use Cormorant Garamond as our default font, but you can easily use
+   whatever you like. */
+@import 'https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,400i';
+
+body,html {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px;
+}
+
+/* Keyframe definitions for the fade in animation on paragraphs. */
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* !! Important
+   Blotter relies on animations and transitions to time output actions.
+   Consequently, you should absolutely *not* remove them entirely from the
+   stylesheet; this will cause blotter to not work. Changing those animations
+   and transitions is fine, just as long as they are there.
+
+   Animation properties that are required by Blotter are marked with a
+   comment.
+*/
+
+#content-container {
+  height: 95vh;
+  max-width: 40rem;
+  margin: auto;
+  #story-stage {
+    height: calc(100% - 3rem);
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    p {
+      animation: 1s fadein; // REQUIRED
+    }
+
+  }
+
+  #choices {
+    height: 3rem;
+    margin: 0;
+    padding: 0;
+    .choices {
+      animation: .5s fadein; // REQUIRED
+      display: flex;
+      flex-flow: row wrap;
+      margin: 0;
+      padding: 0;
+
+      li {
+        background: #ddc;
+        height: 1.5rem;
+        line-height: 1.5rem;
+        display: block;
+        list-style: none;
+        margin: .1rem;
+        font-size: 1.5rem;
+        padding: .25rem;
+        flex-grow: 1;
+        text-align: center;
+        cursor: pointer;
+
+        &:hover {
+          background: #ccd;
+        }
+      }
+
+      &.old {
+        opacity: 0;
+        transition: opacity .5s; // REQUIRED
+      }
+    }
+  }
+}
+
+/* Hide scrollbars in webkit... */
+::-webkit-scrollbar {
+  display: none;
+}
