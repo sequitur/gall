@@ -1,6 +1,6 @@
 {
   "name": "gall",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A command-line tool for building Blotter projects.",
   "homepage": "",
   "author": {
