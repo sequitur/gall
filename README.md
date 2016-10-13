@@ -7,7 +7,7 @@ Gall is a simple command-line tool for assembling Ink stories with [blotter](htt
 Make sure you have an up-to-date version of Node and npm installed in your system, then install Gall from github:
 
 ```
-$ npm install -g sequitur/gall
+$ npm install -g gall
 ```
 
 ## Usage
