@@ -1,6 +1,6 @@
 {
   "name": "gall",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "A command-line tool for building Blotter projects.",
   "homepage": "",
   "author": {
@@ -48,7 +48,7 @@
     "chokidar": "^1.6.1",
     "colors": "^1.1.2",
     "fs-jetpack": "^0.9.2",
-    "ink-blotter": "^0.3.0",
+    "ink-blotter": "^0.4.3",
     "less": "^2.7.1",
     "pug": "^2.0.0-beta6"
   }
